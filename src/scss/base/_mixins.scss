@@ -1,0 +1,47 @@
+// @mixin mediaBg() {
+// 	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+// 	    @content;
+//     }
+// }
+
+// Основные точки перелома
+
+// Ноутбук -----------------------
+@mixin laptop () {
+	@media (max-width: 1439px) {
+		@content;
+	}
+}
+
+// Планшет -----------------------
+@mixin tabletBig () {
+    @media (max-width: 1023px) {
+		@content;
+	}
+}
+
+@mixin tabletMid () {
+    @media (max-width: 915px) {
+		@content;
+	}
+}
+
+// Мобилка -----------------------
+@mixin mobile () {
+    @media (max-width: 767px) {
+		@content;
+	}
+}
+
+@mixin mobileS () {
+    @media (max-width: 475px) {
+		@content;
+	}
+}
+
+@mixin mobileXs () {
+    @media (max-width: 320px) {
+		@content;
+	}
+}
+

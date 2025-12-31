@@ -1,0 +1,92 @@
+.discover {
+    padding: 60px 0;
+    overflow-x: visible;
+
+    @include mobile {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+.discover__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+
+    @include tabletBig {
+        gap: 70px;
+    }
+
+    @include tabletMid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.discover__title {
+    margin-bottom: 24px;
+
+    @include mobile {
+        margin-bottom: 15px;
+    }
+}
+
+.discover__text {
+    margin-bottom: 40px;
+
+    @include mobile {
+        margin-bottom: 30px;
+    }
+}
+
+.discover__form {
+    outline: 1px solid var(--text-muted);
+    border-radius: 16px;
+    padding: 13px 16px;
+
+    @include mobileXs {
+        padding-left: 10px;
+        padding-right: 8px;
+    }
+}
+
+.discover__picture {
+    position: relative;
+    @include tabletBig {
+        width: 390px;
+    }
+
+    @include tabletMid {
+        display: none;
+    }
+}
+
+.discover__picture-hint {   
+    position: absolute;
+    top: 90px;
+    left: 40px;
+
+    @include laptop {
+        top: 40px;
+        left: 20px;
+    }
+}
+
+.discover__picture-scroll {
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    @include laptop {
+        right: 0;
+        bottom: 0;
+    }
+
+    @include tabletBig {
+        right: 15px;
+    }
+
+}
+

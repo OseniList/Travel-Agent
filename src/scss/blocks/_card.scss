@@ -1,0 +1,64 @@
+// .card {
+//     max-width: 304px;
+// }
+
+.card__img {
+    margin-bottom: 16px;
+    overflow: hidden;
+    border-radius: 12px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.card__title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 4px;
+}
+
+.card__title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.card__rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 17px;
+        height: 16px;
+
+        background-image: url('.././img/icons/star-small-gold.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+.card__price {
+    color: var(--text-muted);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+
+    span {
+        color: var(--text-color);
+    }
+
+    i {
+        color: var(--accent);
+        font-style: normal;
+    }
+}

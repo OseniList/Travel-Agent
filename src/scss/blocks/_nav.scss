@@ -1,0 +1,60 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav__logo {
+    flex-shrink: 0;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    a {
+        position: relative;
+        color: var(--text-color);
+        transition: color 0.2s ease;
+
+        &:hover {
+            color: #35AFF4;
+        }   
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 120%;
+    
+            width: 0;
+            height: 2px;
+            background-color: #35AFF4;
+            transition: width 0.2s linear;
+        }
+
+        &:hover::before {
+            width: 100%;
+        }
+    }
+
+    @include mobile {
+        display: none;
+    }
+}
+
+.nav__btns {
+    display: flex;
+    gap: 12px;
+
+    @include mobile {
+        display: none;
+    }
+}
+
+.nav__icon {
+    position: relative;
+    z-index: 999;
+}
+

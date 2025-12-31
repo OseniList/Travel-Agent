@@ -1,0 +1,48 @@
+[
+    {
+        "stars": 3,
+        "text": "An outstanding resource for travel enthusiasts! The website's destination reviews and travel advice were spot-on. I now trust their recommendations for all my trips..",
+        "avatar": "01.jpg",
+        "name": "Hendra Paru Paru",
+        "role": "Travel Enthusiast"
+    },
+
+    {
+        "stars": 4,
+        "text": "I had a seamless booking process with this travel website. Their website was easy to navigate, and I got fantastic deals on flights and accommodation. Will definitely use them for future trips.",
+        "avatar": "02.jpg",
+        "name": "Akbar Cenglu",
+        "role": "Travel Enthusiast"
+    },
+
+    {
+        "stars": 3,
+        "text": "Amazing experience! The travel website made booking our vacation a breeze. Everything was well-organized, and we had a fantastic time exploring new places. Highly recommend!",
+        "avatar": "03.jpg",
+        "name": "Jake Paul",
+        "role": "Travel Enthusiast"
+    },
+    {
+        "stars": 3,
+        "text": "An outstanding resource for travel enthusiasts! The website's destination reviews and travel advice were spot-on. I now trust their recommendations for all my trips..",
+        "avatar": "01.jpg",
+        "name": "Hendra Paru Paru",
+        "role": "Travel Enthusiast"
+    },
+
+    {
+        "stars": 4,
+        "text": "I had a seamless booking process with this travel website. Their website was easy to navigate, and I got fantastic deals on flights and accommodation. Will definitely use them for future trips.",
+        "avatar": "02.jpg",
+        "name": "Akbar Cenglu",
+        "role": "Travel Enthusiast"
+    },
+
+    {
+        "stars": 3,
+        "text": "Amazing experience! The travel website made booking our vacation a breeze. Everything was well-organized, and we had a fantastic time exploring new places. Highly recommend!",
+        "avatar": "03.jpg",
+        "name": "Jake Paul",
+        "role": "Travel Enthusiast"
+    }
+]

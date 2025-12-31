@@ -1,0 +1,14 @@
+.logo {
+    cursor: pointer;
+    animation: logoJump 0.8s ease-in-out infinite running alternate;
+}
+
+@keyframes logoJump {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(4px);
+    }
+}

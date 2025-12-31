@@ -1,0 +1,34 @@
+<div class="swiper-slide testimonials__swiper-slide">
+    <div class="card-reviwer">
+        <div class="card-reviwer__rating">
+    
+            @@for (var i = 0; i < context.stars; i++) {
+                <img src="./img/testimonials/star.svg" alt="star">
+            }
+    
+            @@if (context.stars < 5) {
+                @@for (var i = 0; i < 5 - context.stars; i++) {
+                    <img src="./img/testimonials/star-off.svg" alt="star">
+                }
+            }
+        </div>
+    
+        <div class="card-reviwer__text">
+            <p>"@@text"</p>
+        </div>
+
+        <!-- <button class="read-more">Читать полностью</button> -->
+    
+        <div class="card-reviwer__author">
+            <div class="card-reviwer__author-img">
+                <img src="./img/testimonials/@@avatar" alt="Photo">
+            </div>
+    
+            <div class="card-reviwer__author-title">
+                <h4 class="title-4">@@name</h4>
+                <p class="card-reviwer__author-role">@@role</p>
+            </div>
+           
+        </div>
+    </div>
+</div>

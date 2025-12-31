@@ -1,0 +1,53 @@
+.testimonials {
+    overflow: hidden;
+}
+
+.testimonials__grid-horizontal {
+    display: none;
+
+    @include tabletBig {
+        display: block;
+    }
+}
+
+.testimonials__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+
+    @include tabletBig {
+        display: none;
+    }
+}
+
+.testimonials__col {    
+    display: grid;
+    gap: 32px;
+
+    .swiper {
+        overflow: visible;
+    }
+}
+
+.testimonials__swiper{
+    height: 900px;
+
+    .swiper-slide {
+        height: 330px !important;
+
+        & > * {
+            height: 100%;
+        }
+
+        @include laptop {
+            min-height: 400px !important;
+        }
+    }
+}
+
+.smooth-transition {
+    /* Линейное плавное движение (идеально для marquee/бесконечной ленты) */
+    -webkit-transition-timing-function: linear !important;
+    -o-transition-timing-function: linear !important;
+    transition-timing-function: linear !important;
+}

@@ -1,0 +1,101 @@
+// svg for form
+.icon-search {
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	fill: #fff;
+	stroke: #fff;
+	stroke-width: 0.25px; 
+	transition: opacity 0.2s ease-in;
+}
+
+// svg for partners
+.icon-traveloka,
+.icon-airbnb,
+.icon-expedia,
+.icon-skyscanner,
+.icon-american-airlines {
+	fill: var(--text-muted);
+
+	&:hover {
+		fill: #bc8484;
+	}
+}
+
+.icon-traveloka {
+	width: 127px;
+	height: 28px;
+}
+
+.icon-airbnb {
+	width: 91px;
+	height: 28px;
+}
+
+.icon-expedia {
+	width: 142px;
+	height: 40px;
+}
+
+.icon-skyscanner {
+	width: 156px;
+	height: 28px;
+}
+
+.icon-american-airlines {
+	width: 154px;
+	height: 40px;
+}
+
+
+// svg for popular 
+.icon-popular-btn {
+	width: 48px;
+	height: 48px;
+	fill: white;
+	transition: fill 0.2s ease-in;
+
+	path {
+		fill: #B9B9B9;
+		transition: fill 0.2s ease-out;
+	}
+	rect {
+		stroke: #B9B9B9;
+	}
+
+	&:hover {
+		fill: var(--accent);
+
+		path {
+			fill: #fff;
+		}
+	}
+
+	&:active {
+		position: relative;
+		top: 0.1rem;
+		opacity: 0.8;
+	}
+
+	@include mobile {
+		fill: var(--accent);
+
+		rect {
+			stroke: none;
+		}
+
+		path {
+			fill: #fff;
+		}
+	}
+
+	@include mobileXs {
+		width: 40px;
+		height: 40px;
+	}
+}
+

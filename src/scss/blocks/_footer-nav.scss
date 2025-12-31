@@ -1,0 +1,63 @@
+.footer-nav {
+    display: grid;
+    gap: 24px;
+    
+    // ссылки в footer-nav__list лежащие в li
+    a  {
+        position: relative;
+        color: #fff;
+        transition: color 0.2s ease;
+
+        &:hover {
+            color: var(--accent);
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 125%;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent);
+            transition:width 0.2s linear;
+        }
+
+        &:hover::before {
+            width: 100%;
+        }
+    
+    }
+
+    @include mobile {
+        text-align: center;
+        gap: 12px;
+    }
+}
+
+.footer-nav__list {
+    font-size: 16px;
+    line-height: 1.5;
+
+    li {
+        padding: 8px 0;
+
+        @include mobileS {
+            padding: 6px 0;
+        }
+    }
+
+    @include mobileXs {
+        font-size: 15px;
+    }
+}
+
+.footer-nav__title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+
+    @include mobileXs {
+        font-size: 17px;
+    }
+}
+

@@ -1,0 +1,19 @@
+.btn-signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 8px 20px;
+
+    color: #fff;
+    opacity: 1;
+    background-color: #181818;
+    border-radius: 8px;
+
+    transition: opacity 0.2s ease-in-out;
+}
+
+.btn-signup:hover, .btn-signup.active {
+    opacity: 0.8;
+}
+

@@ -1,0 +1,38 @@
+.partners {
+    padding: 60px 0;
+
+    @include mobile {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+.partners__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 64px;
+
+    @include laptop {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+.partners__content {
+    display: grid;
+    grid-template-columns: repeat(5, (max-content));
+    align-items: center;
+    gap: 32px;
+
+    @include laptop {
+        justify-content: space-between;
+        grid-template-columns: repeat(auto-fit, minmax(150px, max-content));
+    }
+
+    // Необходимое промежуточное значение
+    @media (max-width: 362px) {
+        gap: 25px;
+        justify-self: center;
+    }
+}

@@ -1,0 +1,75 @@
+.subscribe {
+    overflow: hidden;
+    color: #fff;
+    padding: 80px 0;      
+    background-color: var(--accent);
+
+    @include tabletBig {
+        padding: 40px 0;
+    }
+}
+
+.subscribe__row {
+    padding-left: 180px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 30px;
+    
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -90px;
+        left: -80px;
+
+        width: 237px;
+        height: 274px;
+
+        background-image: url('./../img/subscribe/subscribe-pin-bg.svg');
+
+        @include mobile {
+            display: none
+        }
+    }
+
+    @include tabletMid {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    @include mobile {
+        padding-left: 0;
+    }
+}
+
+.subscribe__desc {
+    display: grid;
+    gap: 4px;
+
+    @include mobileS {
+        text-align: center;
+    }
+}
+
+.subscribe__title {
+    font-size: 28px;
+    font-weight: 500;
+
+    @include mobile {
+        font-size: 23px;
+    }
+}
+
+.subscribe__text {
+    font-size: 20px;
+
+    @include mobile {
+        font-size: 18px;
+    }
+}
+
+// .subscribe__form {
+
+// }
