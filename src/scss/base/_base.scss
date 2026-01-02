@@ -1,17 +1,19 @@
 
 html {
-	overflow-x: hidden;
+	overflow-x: hidden; // убрать скролл
 	scroll-behavior: smooth;
 	background-color: rgb(39, 39, 39);
 }
 
 body {
-	overflow-x: hidden;
-
 	background-color: var(--page-bg);
 	color: var(--text-color);
 	font-family: var(--font-main);
 	font-size: 16px;
+}
+
+body {
+  overflow-x: clip;  // задать скролл
 }
 
 img {

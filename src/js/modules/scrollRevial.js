@@ -6,6 +6,12 @@ ScrollReveal({
     duration: 1000,
     reset: true,
     delay: 100,
+
+    // Сброс стилей transform and z-index
+    afterReveal: function (el) {
+        el.style.transform = 'none'; // Сбрасываем трансформацию
+        el.style.zIndex = '1';      // Принудительно задаем слой, если нужно
+    }
 })
 
 // анимации наложенные на секции и блоки
@@ -13,7 +19,7 @@ function scrollRevialFunc() {
     ScrollReveal().reveal('.header',  {
         origin: 'top',
     })
-    ScrollReveal().reveal('.discover__desc',  {
+    ScrollReveal().reveal('.discover__desc',   {
         origin: 'left',
     })
     ScrollReveal().reveal('.form',  {
@@ -31,9 +37,10 @@ function scrollRevialFunc() {
         origin: 'top',
         delay: 520,
     })
-    ScrollReveal().reveal('.partners__row',  {
+    ScrollReveal().reveal('.partners',{
         origin: 'bottom',
-        delay: 500,
+        duration: 600,
+        delay: 0,
     })
     ScrollReveal().reveal('.popular__title',  {
         origin: 'bottom',
@@ -53,11 +60,9 @@ function scrollRevialFunc() {
     })
     ScrollReveal().reveal('.footer-nav',  {
         origin: 'bottom',
-        distance: '100px',
     })
     ScrollReveal().reveal('.footer__copiright',  {
         origin: 'left',
-        distance: '100px',
     })
 }
 
